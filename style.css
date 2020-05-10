@@ -495,7 +495,7 @@ ease-in-out : Le départ et la fin sont lents.*/
 
 
 /*encandrement plats et prix en row*/
-section{
+.section{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;

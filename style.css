@@ -70,10 +70,10 @@ header{
 	
 }
 
-
+/*dégradé de l'icône note de musique*/
 .fas.fa-music{
-	background: -webkit-linear-gradient(left, #ff1a00 28%,#ad00f2 68%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #ff1a00 ,#ad00f2); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -webkit-linear-gradient(left, #cc0000 59%,#f95f00 86%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #cc0000 59%,#f95f00 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 
@@ -138,8 +138,8 @@ header{
 .chic{
 /*texte "le chic à la française" en dégradé horizontal de couleur orange mauve bleu*/
 /*astuce pour appliquer code dégradé, aller sur site https://www.colorzilla.com/gradient-editor/*/
-	background: -webkit-linear-gradient(left, #ff1a00 28%,#ad00f2 68%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #ff1a00 28%,#ad00f2 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -webkit-linear-gradient(-45deg, #f26f0c 21%,#871adb 78%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #f26f0c 21%,#871adb 78%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	font-family: 'Kaushan Script', cursive;
@@ -156,7 +156,7 @@ header{
 /*mise en forme du mot "menu" le chic à la française*/
 .menu2{
 	text-align: center;
-	color: #ff1a00;
+	color: #F26F0C;
 	font-size: 30px;
 	margin-top: -15px;
 	font-family: 'Kaushan Script', cursive;
@@ -540,8 +540,8 @@ ease-in-out : Le départ et la fin sont lents.*/
 .chic2{
 	/*texte "le chic à la française" en dégradé horizontal de couleur orange mauve bleu*/
 /*astuce pour appliquer code dégradé, aller sur site https://www.colorzilla.com/gradient-editor/*/
-	background: -webkit-linear-gradient(left, #ff1a00 28%,#ad00f2 68%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #ff1a00 28%,#ad00f2 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -webkit-linear-gradient(-45deg, #f26f0c 21%,#871adb 78%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #f26f0c 21%,#871adb 78%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	font-family: 'Kaushan Script', cursive;

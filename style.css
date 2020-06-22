@@ -1,4 +1,5 @@
-/*Ici CSS de la page accueil/index*/
+
+/*CSS PAGE ACCUEIL*/
 
 /*marge de 8px automatiquement ajoutée alors j'applique 0 pour la supprimer*/
 body{
@@ -10,11 +11,11 @@ header{
 	background-color: #6AAD90;
 	font-weight: bold;
 	border-bottom: 4px solid #6EAD77;
-	width: 100%;
+	/*width: 100%;*/
 
 }
 
-/*mise en forme de nom de la boîte "ohmyfood"*/
+/*mise en forme de nom de l'entreprise "ohmyfood"*/
 .logo{
 	text-align: center;
 	color: #FAEC57;
@@ -47,25 +48,37 @@ header{
 
 }
 
-/*mise en forme menu 1 accueil - La note enchantée*/
-.menu_enchante{
-	border: 1px solid #FBDAC1;
+/*encadré forme et dimensions des menus*/
+.menu_enchante, .menu_chic, .menu_papilles, .menu_gout{
+	/*border: 1px solid #FBDAC1;*/
 	border-radius: 5px;
 	width: 250px;
 	height: 350px;
-	background-color: #FBDAC1;
 	margin-right: 100px;
 	box-shadow: 2px 2px 1px #F5F3F3, -2px -2px 1px #F5F3F3;
 	overflow: hidden;
-	
-} 
+}
 
+/*bloc items pour titre et menu avec animation hover donnant effet fondu*/
+.items1:hover, .items2:hover, .items3:hover, .items4:hover{
+	transform: scale(1.3);
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+/*MENU 1 PAGE ACCUEIL*/
+
+/*background color menu 1 accueil - La note enchantée*/
+.menu_enchante{
+	
+	background-color: #FBDAC1;
+} 
 
 
 /*mise en forme de l'icône note de musique*/
 .music{
-	font-size: 40px;
-	margin-top: 110px;
+	font-size: 30px;
+	margin-top: 114px;
 	text-align: center;
 	
 }
@@ -79,22 +92,13 @@ header{
 
 }
 
-/*bloc items pour enchanté (titre et menu) avec animation hover donnant effet fondu*/
-.items1:hover{
-	transform: scale(1.5);
-	opacity: 0.3;
-	cursor: pointer;
-}
-
-
-
 
 /*mise en forme du titre du menu "la note enchantée"*/
 .enchante{
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: 'Tangerine', cursive;
-	margin-top: -50px;
+	margin-top: -33px;
 	color: black;
 	
 }
@@ -105,32 +109,19 @@ header{
 .menu1{
 	text-align: center;
 	font-family: 'Nunito', sans-serif;
-	margin-top: -30px;
-	font-size: 30px;
+	margin-top: -24px;
+	font-size: 20px;
 	color: black;
-
 }
 
 
+/*MENU 2 PAGE ACCUEIL*/
 
-/*mise en forme menu 2 accueil - Le chic à la française*/
+/*background color menu 2 accueil - Le chic à la française*/
 .menu_chic{
-	border: 1px solid #FCECEC;
-	border-radius: 5px;
-	width: 250px;
-	height: 350px;
+	
 	background-color: #FCECEC;
-	box-shadow: 2px 2px 1px #F5F3F3, -2px -2px 1px #F5F3F3;
-	overflow: hidden;
-
-}
-
-
-/*bloc items pour chic (titre et menu) avec animation hover donnant effet fondu*/
-.items2:hover{
-	transform: scale(1.5);
-	opacity: 0.3;
-	cursor: pointer;
+	
 }
 
 
@@ -143,11 +134,9 @@ header{
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	font-family: 'Kaushan Script', cursive;
-	font-size: 25px;
+	font-size: 15px;
 	margin-top: 150px;
 	text-align: center;
-
-	
 	
 }
 
@@ -157,33 +146,19 @@ header{
 .menu2{
 	text-align: center;
 	color: #F26F0C;
-	font-size: 30px;
-	margin-top: -15px;
+	font-size: 20px;
+	margin-top: -10px;
 	font-family: 'Kaushan Script', cursive;
 
 }
 
 
-
-
-/*mise en forme encadrement menu 3 accueil - Le délice des papilles*/
+/*background color menu 3 accueil - Le délice des papilles*/
 .menu_papilles{
-	border: 1px solid #F5F3F3;
-	border-radius: 5px;
-	width: 250px;
-	height: 350px;
+	
 	background-color: #F5F3F3;
-	margin-right: 100px;
-	box-shadow: 2px 2px 1px #FBF7F7, -2px -2px 1px #FBF7F7;
-	overflow: hidden;
 }
 
-/*bloc items papilles (titre et menu) avec animation hover donnant effet fondu*/
-	.items3:hover{
-	transform: scale(1.5);
-	opacity: 0.3;
-	cursor: pointer;
-}
 
 /*mise en forme du titre "le délice des papilles"*/
 .papilles{
@@ -193,9 +168,9 @@ header{
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	font-family: 'Lobster', cursive;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
-	margin-top: 130px;
+	margin-top: 142px;
 }
 
 
@@ -204,32 +179,17 @@ header{
 .menu3{
 	text-align: center;
 	color: #0016e2;
-	font-size: 30px;
+	font-size: 20px;
 	margin-top: -10px;
 	font-family: 'Lobster', cursive;
-
 }
 
 
-
-
-/*mise en forme encadrement menu 4 accueil - La palette du goût*/
+/*background color menu 4 accueil - La palette du goût*/
 .menu_gout{
-	border: 1px solid white;
-	border-radius: 5px;
-	width: 250px;
-	height: 350px;
 	background-color: white;
-	box-shadow: 2px 2px 1px #F5F3F3, -2px -2px 1px #F5F3F3;
-	overflow: hidden;
 }
 
-/*bloc items gout (titre et menu) avec animation hover donnant effet fondu*/
-	.items4:hover{
-	transform: scale(1.5);
-	opacity: 0.3;
-	cursor: pointer;
-}
 
 /*mise en forme du titre "la palette du goût"*/
 .gout{
@@ -238,7 +198,7 @@ header{
 	background: linear-gradient(to right, #327f00 34%,#befc76 64%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
-	font-family: 'Bangers', cursive;
+	font-family: 'Tangerine', cursive;
 	font-size: 35px;
 	text-align: center;
 	margin-top: 135px;
@@ -246,18 +206,15 @@ header{
 }
 
 
-
-
 /*mise en forme du mot "menu" pour la palette du goût*/
 .menu4{
 	text-align: center;
 	color: #327f00;
 	font-size: 30px;
-	margin-top: -15px;
-	font-family: 'Bangers', cursive;
+	margin-top: -24px;
+	font-family: 'Tangerine', cursive;
 
 }
-
 
 
 .box_prochainement{
@@ -268,7 +225,6 @@ header{
 	margin-right: auto;
 	width: 200px;
 	margin-bottom: 100px;
-
 }
 
 /*mise en forme du mot "prochainement"*/
@@ -281,12 +237,11 @@ header{
 	
 }
 
-
 .dots {
 	width: 5px;
 	height: 5px;
 	margin: 0 2px;
-	background-color: orange;
+	background-color: white;
 	border-radius: 50%;
 	display: inline-block;
 	animation: dots 2s ease-in-out infinite;
@@ -294,12 +249,10 @@ header{
 }
 
 .dots:nth-child(2){
-	background-color: white;
 	animation-delay: 0.4s;
 }
 
 .dots:nth-child(3){
-	background-color: pink;
 	animation-delay: 0.8s;
 }
 
@@ -346,6 +299,16 @@ ease-in-out : Le départ et la fin sont lents.*/
 	
 }
 
+@keyframes shake{
+	from{
+		transform: rotate(15deg);
+	}
+	to{
+		transform: rotate(-15deg);
+		
+	}
+	
+}
 
 /*2 moyens pour créer animations en CSS, transitions = changement d'un point A à B ou keyframes = d'un point A, puis B, en passant par C jusqu'à D donc plus complet*/
 /*Pseudoclasses connues pour déclencher animation:
@@ -360,16 +323,6 @@ ease-in-out : Le départ et la fin sont lents.*/
 :disabled, qui correspond à un élément dont l'interaction a été bloquée.*/
 /*Lien internet qui répertorie plus de 50 pseudoclasses: https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes*/
 
-@keyframes shake{
-	from{
-		transform: rotate(15deg);
-	}
-	to{
-		transform: rotate(-15deg);
-		
-	}
-	
-}
 
 
 .mentions{
@@ -379,31 +332,47 @@ ease-in-out : Le départ et la fin sont lents.*/
 
 
 
-/*Ici CSS de la page du menu "la note enchantée*/
+/*CSS PAGE MENU 1 "la note enchantée*/
 
 /*titre "la note enchantée" situé au-dessus du menu*/
-.titre_enchante{
-	text-align: center;
-	font-size: 40px;
+
+.titre_enchante, .enchantebis, .intro_menu{
 	font-family: 'Tangerine', cursive;
 }
 
+.titre_enchante{
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: -30px;
+	
+}
+
 /*encadrement orangé du menu complet la note enchantée*/
-.menu1_enchante{
-	border: 1px solid #FBDAC1;
+.menu1_enchante, .menu1_chic, .menu1_papilles, .menu1_gout{
 	border-radius: 5px;
 	width: 700px;
 	height: auto;
-	background-color: #FBDAC1;
 	margin: auto;
 	box-shadow: 2px 2px 1px #F5F3F3, -2px -2px 1px #F5F3F3;
 	margin-bottom: 150px;
 }
 
+.menu1_enchante{
+	background-color: #FBDAC1;
+}
+
+
+.i.fas.fa-music{
+	margin-top: 43px;
+}
+
+
+
 .musicbis{
 	font-size: 70px;
 	text-align: center;
 	margin-bottom: -20px;
+	padding-top: 50px;
 
 }
 
@@ -411,44 +380,38 @@ ease-in-out : Le départ et la fin sont lents.*/
 .enchantebis{
 	text-align: center;
 	font-size: 70px;
-	font-family: 'Tangerine', cursive;
-	color: black;
 	margin: 0;
 }
 
-
-
-/*mise en forme titre entrée, plats et desserts, ex: prélude etc*/
-.intro_menu{
-	text-align: center;
-	font-family: 'Tangerine', cursive;
-	font-size: 40px;
-	color: black;
-	position: relative;
-	cursor: pointer;
-		
-}
-
-
-
-.intro_menu:after{
+/*soulignement des intro entrées plats desserts*/
+.intro_menu:after, .intro_menu_orange:after, .intro_menu_purple:after, .intro_menu_blue:after, .intro_menu_papilles1:after, .intro_menu_papilles2:after, .intro_menu_papilles3:after, .intro_menu_gout:after{
     content: "";
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     height: 2px;
-    background: black;
     transform: scaleX(0);
     transform-origin: 0;
     transition: .5s ease-in-out;
    
 }
- 
-.intro_menu:hover:after{
-    transform: scaleX(1);
-   
 
+.intro_menu:after{
+	background-color: black;
+}
+
+.intro_menu:hover:after, .intro_menu_orange:hover:after, .intro_menu_purple:hover:after, .intro_menu_blue:hover:after, .intro_menu_papilles1:hover:after, .intro_menu_papilles2:hover:after, .intro_menu_papilles3:hover:after, .intro_menu_gout:hover:after{
+    transform: scaleX(1);
+}
+
+/*mise en forme titre entrée, plats et desserts, ex: prélude etc*/
+.intro_menu{
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	cursor: pointer;
+		
 }
 
 
@@ -460,40 +423,31 @@ ease-in-out : Le départ et la fin sont lents.*/
 }
 
 
-
-.hr_left{
-	margin-left: 100px;
+.hr_left, .hr_right {
 	border: 0;
 	width: 110px;
 	height: 3px;
 	background: #333;
 	margin-top: 60px;
+}
+
+.hr_left {
+	margin-left: 100px;
 }
 
 .hr_right{
 	margin-right: 100px;
-	border: 0;
-	width: 110px;
-	height: 3px;
-	background: #333;
-	margin-top: 60px;
+	
 }
 
-.titre_plats{
+.titre_plats, .prix, .titre_desserts{
 	font-family: 'Tangerine', cursive;
 	font-size: 26px;
 }
 
 .prix{
-	font-family: 'Tangerine', cursive;
+	
 	font-weight: bold;
-	font-size: 26px;
-}
-
-.titre_desserts{
-	font-family: 'Tangerine', cursive;
-	font-size: 26px;
-
 }
 
 
@@ -511,55 +465,49 @@ ease-in-out : Le départ et la fin sont lents.*/
 
 .titre_desserts{
 	margin-left: 100px;
+	margin-bottom: 100px;
 }
+
+
 
 /*mise en forme de l'icône + note enchantée à la fin du menu*/
 .enchante_end{
 	text-align: center;
-	margin-bottom: 100px;
+	padding-bottom: 40px;
 }
 
-/*Ici CSS de la page du menu "le chic à la française*/
+/*CSS PAGE MENU 2 "le chic à la française*/
 
 /*encadrement rosé du menu complet le chic à la française*/
 .menu1_chic{
-	border: 1px solid #FCECEC;
-	border-radius: 5px;
-	width: 700px;
-	height: auto;
 	background-color: #FCECEC;
-	margin: auto;
-	box-shadow: 2px 2px 1px #F5F3F3, -2px -2px 1px #F5F3F3;
-	margin-bottom: 150px;
+}
+
+.titre_chic, .chic2, .intro_menu_orange{
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
 }
 
 .titre_chic{
-	font-family: 'Kaushan Script', cursive;
-	text-align: center;
 	font-size: 25px;
-
 }
 
 .chic2{
-	/*texte "le chic à la française" en dégradé horizontal de couleur orange mauve bleu*/
+/*texte "le chic à la française" en dégradé horizontal de couleur orange mauve bleu*/
 /*astuce pour appliquer code dégradé, aller sur site https://www.colorzilla.com/gradient-editor/*/
 	background: -webkit-linear-gradient(-45deg, #f26f0c 21%,#871adb 78%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(135deg, #f26f0c 21%,#871adb 78%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
-	font-family: 'Kaushan Script', cursive;
 	font-size: 45px;
-	padding: 30px;
+	padding: 90px;
 	margin-bottom: 0;
-	text-align: center;
 }
 
 
 /*mise en forme partie entrée en orange*/
 
 .intro_menu_orange{
-	text-align: center;
-	font-family: 'Kaushan Script', cursive;
 	font-size: 20px;
 	color: orange;
 	position: relative;
@@ -567,43 +515,42 @@ ease-in-out : Le départ et la fin sont lents.*/
 
 }
 
+
+
 .intro_menu_orange:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    background: orange;
-    transform: scaleX(0);
-    transform-origin: 0;
-    transition: .5s ease-in-out;
-   
+	background: orange;
 }
  
-.intro_menu_orange:hover:after{
-    transform: scaleX(1);
-   
+.intro_menu_purple:after{
+	background: purple;
+ }
 
+.intro_menu_blue:after{
+	background: blue;
 }
 
 
 
+.titre_plats_orange, .prix_orange, .intro_menu_purple, .titre_plats_purple, .prix_purple
+.intro_menu_blue, .titre_desserts_blue{
+	
+	font-family: 'Kaushan Script', cursive;
+	
+}
 
+.titre_plats_orange, .prix_orange{
+	color: orange;
+	font-size: 15px;
+
+}
 
 .titre_plats_orange{
 	margin-right: 110px;
-	color: orange;
-	font-family: 'Kaushan Script', cursive;
-	font-size: 15px;
-
+	
 }
 
 .prix_orange{
-	color: orange;
 	margin-left: 50px;
-	font-family: 'Kaushan Script', cursive;
-	font-size: 15px;
 	font-weight: bold;
 
 }
@@ -611,7 +558,6 @@ ease-in-out : Le départ et la fin sont lents.*/
 /*mise en forme partie en violet*/
 .intro_menu_purple{
 	text-align: center;
-	font-family: 'Kaushan Script', cursive;
 	font-size: 20px;
 	color: purple;
 	cursor: pointer;
@@ -619,161 +565,83 @@ ease-in-out : Le départ et la fin sont lents.*/
 	
 }
 
-.intro_menu_purple:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    background: purple;
-    transform: scaleX(0);
-    transform-origin: 0;
-    transition: .5s ease-in-out;
-   
-}
- 
-.intro_menu_purple:hover:after{
-    transform: scaleX(1);
-   
 
-}
-
-
-.titre_plats_purple{
+.titre_plats_purple, .prix_purple{
 	
 	color: purple;
-	font-family: 'Kaushan Script', cursive;
 	font-size: 15px;
 }
 
 .prix_purple{
-	color: purple;
-	font-family: 'Kaushan Script', cursive;
-	font-size: 15px;
+	
 	font-weight: bold;
 	margin-left: 30px;
 }
 
+
 /*mise en forme partie en bleu*/
+
+.intro_menu_blue, .titre_desserts_blue{
+	color: blue;
+}
+
 .intro_menu_blue{
 	text-align: center;
-	font-family: 'Kaushan Script', cursive;
 	font-size: 20px;
-	color: blue;
 	cursor: pointer;
 	position: relative;
-
-}
-
-.intro_menu_blue:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    background: blue;
-    transform: scaleX(0);
-    transform-origin: 0;
-    transition: .5s ease-in-out;
-   
-}
- 
-.intro_menu_blue:hover:after{
-    transform: scaleX(1);
-   
 
 }
 
 
 .titre_desserts_blue{
-	color: blue;
+	
 	margin-left: 100px;
-	margin-bottom: 50px;
-	font-family: 'Kaushan Script', cursive;
+	padding-bottom: 100px;
 	font-size: 15px;
 }
 
+
 /*lignes horizontales*/
 
-
-.hr_left2_orange{
-	margin-left: 100px;
+.hr_left2_orange, .hr_right2_orange, .hr_left2_purple, .hr_right2_purple, .hr_left2_blue, .hr_right2_blue{
 	border: 0;
 	width: 110px;
 	height: 3px;
 	margin-top: 35px;
+}
+
+.hr_left2_orange, .hr_left2_purple, .hr_left2_blue{
+	margin-left: 100px;
+}
+
+.hr_right2_orange, .hr_right2_purple, .hr_right2_blue{
+	margin-right: 100px;
+	
+}
+
+.hr_left2_orange, .hr_right2_orange{
 	background: orange;
 }
 
-.hr_right2_orange{
-	margin-right: 100px;
-	border: 0;
-	width: 110px;
-	height: 3px;
-	margin-top: 35px;
-	background: orange;
 
-}
-
-
-.hr_left2_purple{
-	margin-left: 100px;
-	border: 0;
-	width: 110px;
-	height: 3px;
-	margin-top: 35px;
+.hr_left2_purple, .hr_right2_purple{
 	background: purple;
 }
 
-.hr_right2_purple{
-	margin-right: 100px;
-	border: 0;
-	width: 110px;
-	height: 3px;
-	margin-top: 35px;
-	background: purple;
 
-}
-
-.hr_left2_blue{
-	margin-left: 100px;
-	border: 0;
-	width: 110px;
-	height: 3px;
-	margin-top: 35px;
+.hr_left2_blue, .hr_right2_blue{
+	
 	background: blue;
 }
 
-.hr_right2_blue{
-	margin-right: 100px;
-	border: 0;
-	width: 110px;
-	height: 3px;
-	margin-top: 35px;
-	background: blue;
-
-}
 
 
-
-/*Ici CSS de la page du menu "le délice des papilles"*/
+/*CSS PAGE MENU 3 "le délice des papilles"*/
 
 /*encadrement gris du menu complet le délice des papilles*/
-.menu1_papilles{
-	border: 1px solid #F5F3F3;
-	border-radius: 5px;
-	width: 700px;
-	height: auto;
-	background-color: #F5F3F3;
-	margin: auto;
-	box-shadow: 2px 2px 1px #F5F3F3, -2px -2px 1px #F5F3F3;
-	margin-bottom: 150px;
-}
 
-
-.titre_papilles{
+.titre_papilles, .intro_menu_papilles1, .intro_menu_papilles2, .intro_menu_papilles3{
 	text-align: center;
 	font-size: 40px;
 	font-family: 'Tangerine', cursive;
@@ -795,204 +663,74 @@ ease-in-out : Le départ et la fin sont lents.*/
 }
 
 /*mise en forme titre entrée, plats et desserts, ex: prélude etc*/
-.intro_menu_papilles1{
-	text-align: center;
-	font-family: 'Tangerine', cursive;
-	font-size: 40px;
-	color: black;
+.intro_menu_papilles1, .intro_menu_papilles2, .intro_menu_papilles3{
 	position: relative;
 	cursor: pointer;
 		
 }
-
-
-
 
 .intro_menu_papilles1:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    background: #0016e2;
-    transform: scaleX(0);
-    transform-origin: 0;
-    transition: .5s ease-in-out;
-   
-}
- 
-.intro_menu_papilles1:hover:after{
-    transform: scaleX(1);
-   
-
-}
-
-.intro_menu_papilles2{
-	text-align: center;
-	font-family: 'Tangerine', cursive;
-	font-size: 40px;
-	color: black;
-	position: relative;
-	cursor: pointer;
-		
+	background-color: #0016e2;
 }
 
 .intro_menu_papilles2:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    background: #009df2;
-    transform: scaleX(0);
-    transform-origin: 0;
-    transition: .5s ease-in-out;
-   
-}
- 
-.intro_menu_papilles2:hover:after{
-    transform: scaleX(1);
-   
-
-}
-
-.intro_menu_papilles3{
-	text-align: center;
-	font-family: 'Tangerine', cursive;
-	font-size: 40px;
-	color: black;
-	position: relative;
-	cursor: pointer;
-		
+	background-color: #009df2;
 }
 
 .intro_menu_papilles3:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    background: #00d2f7;
-    transform: scaleX(0);
-    transform-origin: 0;
-    transition: .5s ease-in-out;
-   
+	background-color: #00d2f7;
 }
- 
-.intro_menu_papilles3:hover:after{
-    transform: scaleX(1);
-
- }
    
+.prix_papilles1, .titre_plats_papilles1, .titre_plats_papilles2, .prix_papilles2, .titre_desserts_papilles, .prix_papilles3{
+	font-family: 'Lobster', cursive;
+
+}
 
 .titre_plats_papilles1{
 	margin-right: 20px;
-	font-family: 'Lobster', cursive;
-}
-
-.prix_papilles1{
-	font-family: 'Lobster', cursive;
-
 }
 
 .titre_plats_papilles2{
 	margin-right: 70px;
-	font-family: 'Lobster', cursive;
 }
-
-.prix_papilles2{
-	font-family: 'Lobster', cursive;
-
-}
-
 
 .titre_desserts_papilles{
 	margin-right: 280px;
 	margin-bottom: 50px;
-	font-family: 'Lobster', cursive;
-
 }
 
-.prix_papilles3{
-	font-family: 'Lobster', cursive;
-
-}
-
-.hr_left3_blue1{
+.hr_left3_blue1, .hr_right3_blue1, .hr_left3_blue2, .hr_right3_blue2, .hr_left3_blue3, .hr_right3_blue3{
 	margin-left: 80px;
 	border: 0;
 	width: 110px;
 	height: 3px;
+	margin-top: 65px;
+}
+
+.hr_left3_blue1, .hr_right3_blue1{
 	background: #0016e2;
-	margin-top: 65px;
 }
 
-.hr_right3_blue1{
-	margin-right: 80px;
-	border: 0;
-	width: 110px;
-	height: 3px;
-	background: #0016e2;
-	margin-top: 65px;
-
-}
-
-.hr_left3_blue2{
-	margin-left: 80px;
-	border: 0;
-	width: 110px;
-	height: 3px;
+.hr_left3_blue2, .hr_right3_blue2{
 	background: #009df2;
-	margin-top: 65px;
+	
 }
 
-.hr_right3_blue2{
-	margin-right: 80px;
-	border: 0;
-	width: 110px;
-	height: 3px;
-	background: #009df2;
-	margin-top: 65px;
 
-}
-
-.hr_left3_blue3{
-	margin-left: 80px;
-	border: 0;
-	width: 110px;
-	height: 3px;
+.hr_left3_blue3, .hr_right3_blue3{
 	background: #00d2f7;
-	margin-top: 65px;
-}
-
-.hr_right3_blue3{
-	margin-right: 80px;
-	border: 0;
-	width: 110px;
-	height: 3px;
-	background: #00d2f7;
-	margin-top: 65px;
-
+	
 }
 
 
 
-/*Ici CSS de la page du menu "la palette du gout"*/
+/*CSS PAGE MENU 4 "la palette du gout"*/
 
-/*encadrement blanc du menu complet la palette du gout*/
-.menu1_gout{
-	border: 1px solid white;
-	border-radius: 5px;
-	width: 700px;
-	height: auto;
-	background-color: white;
-	margin: auto;
-	box-shadow: 2px 2px 1px #F5F3F3, -2px -2px 1px #F5F3F3;
-	margin-bottom: 150px;
-	overflow: hidden; 
+.titre_palette_gout{
+	text-align: center;
+    font-size: 50px;
+    margin-bottom: 35px;
+    font-family: 'Tangerine', cursive;
 }
 
 .gout1{
@@ -1001,11 +739,11 @@ ease-in-out : Le départ et la fin sont lents.*/
 	background: linear-gradient(to right, #327f00 34%,#befc76 64%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
-	font-family: 'Bangers', cursive;
-	font-size: 30px;
+	font-family: 'Tangerine', cursive;
+	font-size: 50px;
 	text-align: center;
 	margin-bottom: 0;
-
+	padding: 50px;
 }
 
 .intro_menu_gout{
@@ -1018,32 +756,17 @@ ease-in-out : Le départ et la fin sont lents.*/
 }
 
 .intro_menu_gout:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 3px;
+    
     background: -webkit-linear-gradient(left, #327f00 34%,#befc76 64%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, #327f00 34%,#befc76 64%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    transform: scaleX(0);
-    transform-origin: 0;
-    transition: .5s ease-in-out;
-   
+       
 }
  
-.intro_menu_gout:hover:after{
-    transform: scaleX(1);
-
- }
-
-
 
 .titre_plats_gout1{
 	
 	margin-right: 110px;
 }
-
 
 
 .titre_plats_gout{
@@ -1056,8 +779,7 @@ ease-in-out : Le départ et la fin sont lents.*/
 	margin-bottom: 50px;
 }
 
-.hr_left4{
-	margin-left: 100px;
+.hr_left4, .hr_right4{
 	border: 0;
 	width: 110px;
 	height:5px;
@@ -1066,14 +788,12 @@ ease-in-out : Le départ et la fin sont lents.*/
 	margin-top: 60px;
 }
 
+.hr_left4{
+	margin-left: 100px;
+}
+
 .hr_right4{
 	margin-right: 100px;
-	border: 0;
-	width: 110px;
-	height: 5px;
-	background: -webkit-linear-gradient(left, #327f00 34%,#befc76 64%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #327f00 34%,#befc76 64%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	margin-top: 60px;
 }
 
 
@@ -1086,10 +806,6 @@ ease-in-out : Le départ et la fin sont lents.*/
 		width: auto;
 	}
 
-	header{
-		width: 100%;
-
-	}
 
 	footer{
 		width: 100%;
@@ -1172,12 +888,32 @@ ease-in-out : Le départ et la fin sont lents.*/
 		margin-top: -52px;
 	}
 
+	.hr_left, .hr_right{
+		width: 185px;
+	}
+
+	.hr_right {
+    margin-right: 25px;
+	}
+
+	.hr_left {
+    margin-left: 25px;
+	}
+
+	.titre_plats, .prix, .titre_desserts{
+		font-size: 35px;
+	}
+
+	.titre_desserts {
+    margin-left: 16px;
+    }
+
 	.fas.fa-music{
 		font-size: 79px;
 	}
 
 	.enchante{
-		font-size: 103px;
+		font-size: 55px;
 		margin-bottom: -30px;
 	}
 
@@ -1255,10 +991,15 @@ ease-in-out : Le départ et la fin sont lents.*/
 /* CSS appliqué aux écrans smartphone entre 425px et 320px*/
 @media screen and (max-width: 425px) {
 
-	header{
-		width: 655px;
+	body{
+		width: 656px;
+	}
+	
+	.box1_menus, .box2_menus {
+        margin: 25px;
 	}
 
+/*Menu enchanté*/
 	.menu_enchante{
 		width: 553px;
 		
@@ -1269,35 +1010,47 @@ ease-in-out : Le départ et la fin sont lents.*/
 	}
 
 	.enchante{
-		font-size: 94px;
+		font-size: 62px;
 		
 	}
 
+/*Menu chic*/
 	.menu_chic{
 			width: 553px;
-			
-			
 	}
 
+/*Menu papilles*/
 	.menu_papilles{
 			width: 553px;
-			
-			
 	}
+
+	.hr_left2_orange, .hr_left2_purple, .hr_left2_blue {
+    margin-left: 24px;
+	}
+
+	.hr_right2_orange, .hr_right2_purple, .hr_right2_blue {
+    margin-right: 24px;
+	}
+
+	.hr_left2_orange, .hr_right2_orange, .hr_left2_purple, .hr_right2_purple, .hr_left2_blue, .hr_right2_blue {
+    width: 154px;
+	}
+
+
+	/*Menu gout*/
 
 	.menu_gout{
 		width: 553px;
-		
-		
+			
 	}
+
+
 
 	.box_prochainement{
 		margin-left: 190px;
 	}
 
-	footer{
-		width:655px;
-	}
+	
 
 	/*page du menu1 enchante écran max 425px*/
 
@@ -1308,13 +1061,13 @@ ease-in-out : Le départ et la fin sont lents.*/
 
 	}
 
-	.titre_enchante{
-		margin-left: 230px;
-		margin-right: auto;
+	
+	.titre_plats{
+		font-size: 34px;
 	}
 
-	.titre_plats{
-		font-size: 23px;
+	.titre_plats {
+    margin-right: 36px;
 	}
 
 	
@@ -1334,6 +1087,14 @@ ease-in-out : Le départ et la fin sont lents.*/
 		width: 247px;
 
 	}
+
+	.titre_plats_orange, .prix_orange, .titre_plats_purple, .prix_purple, .titre_desserts_blue {
+        font-size: 19px;
+	}
+
+	.titre_desserts_blue {
+    	margin-left: 18px;
+    }
 
 /*page du menu3 gout écran max 425px*/
 
@@ -1365,43 +1126,65 @@ ease-in-out : Le départ et la fin sont lents.*/
 
 @media screen and (min-width: 320px) and (max-width: 375px){
 
-	header{
-		width: 667px;
+	body{
+		width: 665px;
 	}
 
-	.menu_enchante{
+	.menu_enchante, .menu_chic, .menu_papilles, .menu_gout{
 
-		margin-left: 0;
+		margin-left: 45px;
+		width: 520px;
 	}
 
-	.menu_chic{
-
-		margin-left: 0;
+	.titre_enchante {
+       font-size: 42px;
 	}
 
-	.menu_papilles{
-
-		margin-left: 0;
+	.menu1_enchante {
+    width: 653px;
 	}
 
-	.menu_gout{
-
-		margin-left: 0;
+	.titre_plats {
+    font-size: 37px;
+    margin-right: 11px;
 	}
 
+	.chic {
+    font-size: 47px;
+    }
+
+    .menu2 {
+    font-size: 59px;
+	}
+
+	.papilles {
+    font-size: 45px;
+	}
+
+	.menu3 {
+    font-size: 56px;
+    }
+
+	.gout {
+    font-size: 57px;
+   	}
+
+	.menu4 {
+    font-size: 53px;
+    }
+
+	
 	.box_prochainement{
-		margin-left: 200px;
+		margin-left: 148px;
 	}
 
-	footer{
-		width: 667px;
-	}
+	
 
 	/*Menu page 1 enchante écran 320-375px*/
 
 
 	.menu1_enchante{
-		width: 665px;
+		width: 653px;
 	}
 
 	.titre_enchante{
